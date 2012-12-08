@@ -1,0 +1,49 @@
+---
+abstract: 'Use the Amazon S3 - Simple Storage Service'
+author:
+  - 'Yasutaka ATARASHI <yakex@cpan.org>'
+build_requires:
+  Digest::MD5::File: 0
+  File::Find: 0
+  File::Temp: 0
+  File::stat: 0
+  LWP::Simple: 0
+  Test::Exception: 0
+  Test::More: 0
+  vars: 0
+configure_requires:
+  ExtUtils::MakeMaker: 6.30
+dynamic_config: 0
+generated_by: 'Dist::Zilla version 4.300028, CPAN::Meta::Converter version 2.120921'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: AnyEvent-Net-Amazon-S3
+requires:
+  AnyEvent: 0
+  AnyEvent::HTTP::LWP::UserAgent: 0.09
+  AnyEvent::HTTP::LWP::UserAgent::Determined: 0
+  Carp: 0
+  Data::Stream::Bulk::AnyEvent: 0
+  Digest::MD5: 0
+  File::Find::Rule: 0
+  Getopt::Long: 0
+  MIME::Types: 0
+  Module::AnyEvent::Helper: 0
+  Module::AnyEvent::Helper::Filter: 0
+  Module::AnyEvent::Helper::PPI::Transform: 0
+  Net::Amazon::S3: 0
+  PPI::Transform::PackageName: 0
+  Path::Class: 0
+  Pod::Usage: 0
+  Term::Encoding: 0
+  Term::ProgressBar::Simple: 0
+  parent: 0
+  perl: 5.006
+  strict: 0
+  warnings: 0
+resources:
+  bugtracker: https://github.com/yak1ex/net-amazon-s3/issues
+  repository: https://github.com/yak1ex/net-amazon-s3.git
+version: v0.01.0.57
