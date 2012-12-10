@@ -1,7 +1,7 @@
 package AnyEvent::Net::Amazon::S3::Request::SetObjectAccessControl;
 
 # ABSTRACT: An internal class to set an object's access control
-our $VERSION = 'v0.01.0.57'; # VERSION
+our $VERSION = 'v0.01.0.58'; # VERSION
 
 use strict;
 use warnings;
@@ -22,7 +22,7 @@ AnyEvent::Net::Amazon::S3::Request::SetObjectAccessControl - An internal class t
 
 =head1 VERSION
 
-version v0.01.0.57
+version v0.01.0.58
 
 =head1 SYNOPSIS
 

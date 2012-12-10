@@ -1,7 +1,7 @@
 package AnyEvent::Net::Amazon::S3::Client;
 
 # ABSTRACT: An easy-to-use Amazon S3 client with AnyEvent
-our $VERSION = 'v0.01.0.57'; # VERSION
+our $VERSION = 'v0.01.0.58'; # VERSION
 
 use strict;
 use warnings;
@@ -24,7 +24,7 @@ AnyEvent::Net::Amazon::S3::Client - An easy-to-use Amazon S3 client with AnyEven
 
 =head1 VERSION
 
-version v0.01.0.57
+version v0.01.0.58
 
 =head1 SYNOPSIS
 
@@ -80,20 +80,7 @@ You can get actual return value by calling C<shift-E<gt>recv()>.
 
 =back
 
-=begin comment
-
-This section is not outputted to actual POD document but for Pod::Coverage.
-Description for The followings are omitted.
-
-=over 4
-
-=item bucket
-
-Described in L<Net::Amazon::S3::Client>.
-
-=back
-
-=end comment
+=for Pod::Coverage bucket
 
 =head1 SEE ALSO
 

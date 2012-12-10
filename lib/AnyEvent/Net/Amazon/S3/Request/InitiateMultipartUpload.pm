@@ -1,6 +1,6 @@
-package AnyEvent::Net::Amazon::S3::Request::GetBucketAccessControl;
+package AnyEvent::Net::Amazon::S3::Request::InitiateMultipartUpload;
 
-# ABSTRACT: An internal class to create a bucket
+# ABSTRACT: An internal class to begin a multipart upload
 our $VERSION = 'v0.01.0.58'; # VERSION
 
 use strict;
@@ -18,7 +18,7 @@ __END__
 
 =head1 NAME
 
-AnyEvent::Net::Amazon::S3::Request::GetBucketAccessControl - An internal class to create a bucket
+AnyEvent::Net::Amazon::S3::Request::InitiateMultipartUpload - An internal class to begin a multipart upload
 
 =head1 VERSION
 
@@ -26,14 +26,15 @@ version v0.01.0.58
 
 =head1 SYNOPSIS
 
-  my $http_request = AnyEvent::Net::Amazon::S3::Request::GetBucketAccessControl->new(
-    s3     => $s3,
-    bucket => $bucket,
+  my $http_request = AnyEvent::Net::Amazon::S3::Request::InitiateMultipartUpload->new(
+    s3                  => $s3,
+    bucket              => $bucket,
+    keys                => $key,
   )->http_request;
 
 =head1 DESCRIPTION
 
-This module is the same as L<Net::Amazon::S3::Request::GetBucketAccessControl>, except for its name.
+This module is the same as L<Net::Amazon::S3::Request::InitiateMultipartUpload>, except for its name.
 
 =for test_synopsis no strict 'vars';
 

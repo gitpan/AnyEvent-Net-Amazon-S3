@@ -32,7 +32,7 @@ my %WriteMakefileArgs = (
   "NAME" => "AnyEvent::Net::Amazon::S3",
   "PREREQ_PM" => {
     "AnyEvent" => 0,
-    "AnyEvent::HTTP::LWP::UserAgent" => "0.09",
+    "AnyEvent::HTTP::LWP::UserAgent" => "0.10",
     "AnyEvent::HTTP::LWP::UserAgent::Determined" => 0,
     "Carp" => 0,
     "Data::Stream::Bulk::AnyEvent" => 0,
@@ -43,7 +43,7 @@ my %WriteMakefileArgs = (
     "Module::AnyEvent::Helper" => 0,
     "Module::AnyEvent::Helper::Filter" => 0,
     "Module::AnyEvent::Helper::PPI::Transform" => 0,
-    "Net::Amazon::S3" => 0,
+    "Net::Amazon::S3" => "0.58",
     "PPI::Transform::PackageName" => 0,
     "Path::Class" => 0,
     "Pod::Usage" => 0,
@@ -53,7 +53,7 @@ my %WriteMakefileArgs = (
     "strict" => 0,
     "warnings" => 0
   },
-  "VERSION" => "v0.01.0.57",
+  "VERSION" => "v0.01.0.58",
   "test" => {
     "TESTS" => "t/*.t"
   }

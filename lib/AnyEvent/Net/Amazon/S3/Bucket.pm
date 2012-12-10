@@ -1,7 +1,7 @@
 package AnyEvent::Net::Amazon::S3::Bucket;
 
 # ABSTRACT: convenience object for working with Amazon S3 buckets
-our $VERSION = 'v0.01.0.57'; # VERSION
+our $VERSION = 'v0.01.0.58'; # VERSION
 
 use strict;
 use warnings;
@@ -26,7 +26,7 @@ AnyEvent::Net::Amazon::S3::Bucket - convenience object for working with Amazon S
 
 =head1 VERSION
 
-version v0.01.0.57
+version v0.01.0.58
 
 =head1 SYNOPSIS
 
@@ -119,24 +119,8 @@ You can get actual return value by calling C<shift-E<gt>recv()>.
 
 =back
 
-=begin comment
-
-This section is not outputted to actual POD document but for Pod::Coverage.
-Description for The followings are omitted.
-
-=over 4
-
-=item err
-
-Described in L<Net::Amazon::S3::Bucket>.
-
-=item errstr
-
-Described in L<Net::Amazon::S3::Bucket>.
-
-=back
-
-=end comment
+=for Pod::Coverage err
+errstr
 
 =head1 SEE ALSO
 

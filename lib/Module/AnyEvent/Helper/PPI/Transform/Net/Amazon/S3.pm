@@ -1,7 +1,7 @@
 package Module::AnyEvent::Helper::PPI::Transform::Net::Amazon::S3;
 
 # ABSTRACT: Additional transformer for Module::AnyEvent::Helper
-our $VERSION = 'v0.01.0.57'; # VERSION
+our $VERSION = 'v0.01.0.58'; # VERSION
 
 use strict;
 use warnings;
@@ -33,7 +33,7 @@ Module::AnyEvent::Helper::PPI::Transform::Net::Amazon::S3 - Additional transform
 
 =head1 VERSION
 
-version v0.01.0.57
+version v0.01.0.58
 
 =head1 SYNOPSIS
 

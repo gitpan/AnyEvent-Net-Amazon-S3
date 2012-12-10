@@ -1,5 +1,5 @@
 requires "AnyEvent" => "0";
-requires "AnyEvent::HTTP::LWP::UserAgent" => "0.09";
+requires "AnyEvent::HTTP::LWP::UserAgent" => "0.10";
 requires "AnyEvent::HTTP::LWP::UserAgent::Determined" => "0";
 requires "Carp" => "0";
 requires "Data::Stream::Bulk::AnyEvent" => "0";
@@ -10,7 +10,7 @@ requires "MIME::Types" => "0";
 requires "Module::AnyEvent::Helper" => "0";
 requires "Module::AnyEvent::Helper::Filter" => "0";
 requires "Module::AnyEvent::Helper::PPI::Transform" => "0";
-requires "Net::Amazon::S3" => "0";
+requires "Net::Amazon::S3" => "0.58";
 requires "PPI::Transform::PackageName" => "0";
 requires "Path::Class" => "0";
 requires "Pod::Usage" => "0";

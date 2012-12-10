@@ -1,7 +1,7 @@
 package AnyEvent::Net::Amazon::S3;
 
 # ABSTRACT: Use the Amazon S3 - Simple Storage Service
-our $VERSION = 'v0.01.0.57'; # VERSION
+our $VERSION = 'v0.01.0.58'; # VERSION
 
 use strict;
 use warnings;
@@ -64,7 +64,7 @@ AnyEvent::Net::Amazon::S3 - Use the Amazon S3 - Simple Storage Service
 
 =head1 VERSION
 
-version v0.01.0.57
+version v0.01.0.58
 
 =head1 SYNOPSIS
 
@@ -172,24 +172,8 @@ You can get actual return value by calling C<shift-E<gt>recv()>.
 
 =back
 
-=begin :comment
-
-This section is not outputted to actual POD document but for Pod::Coverage.
-Description for the followings are omitted.
-
-=over 4
-
-=item BUILD
-
-Moose private function
-
-=item bucket
-
-Described in L<Net::Amazon::S3>.
-
-=back
-
-=end :comment
+=for Pod::Coverage BUILD
+bucket
 
 =head1 TESTING
 

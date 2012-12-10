@@ -1,14 +1,14 @@
 package AnyEvent::Net::Amazon::S3::Client::Bucket;
 
 # ABSTRACT: An easy-to-use Amazon S3 client bucket
-our $VERSION = 'v0.01.0.57'; # VERSION
+our $VERSION = 'v0.01.0.58'; # VERSION
 
 use strict;
 use warnings;
 
 use Module::AnyEvent::Helper::Filter -as => __PACKAGE__, -target => 'Net::Amazon::S3::Client::Bucket',
         -transformer => 'Net::Amazon::S3::Client::Bucket',
-        -translate_func => [qw(_create delete acl location_constraint)],
+        -translate_func => [qw(_create delete acl location_constraint delete_multi_object)],
         -replace_func => [qw(_send_request _send_request_content _send_request_xpc)],
         -exclude_func => [qw(list)]
 ;
@@ -25,7 +25,7 @@ AnyEvent::Net::Amazon::S3::Client::Bucket - An easy-to-use Amazon S3 client buck
 
 =head1 VERSION
 
-version v0.01.0.57
+version v0.01.0.58
 
 =head1 SYNOPSIS
 
@@ -85,27 +85,16 @@ You can get actual return value by calling C<shift-E<gt>recv()>.
 
 =item location_constraint_async
 
+=item delete_multi_object_async
+
 =back
 
-=begin comment
-
-This section is not outputted to actual POD document but for Pod::Coverage.
-Description for The followings are omitted.
-
-=over 4
-
-=item list
+=head2 list
 
 In addition to described in L<Net::Amazon::S3::Client::Bucket>,
 C<max_keys> and C<marker> options can be accepted.
 
-=item object
-
-Described in L<Net::Amazon::S3::Client::Bucket>.
-
-=back
-
-=end comment
+=for Pod::Coverage object
 
 =head1 AUTHOR
 

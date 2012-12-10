@@ -1,7 +1,7 @@
 package AnyEvent::Net::Amazon::S3::Client::Object;
 
 # ABSTRACT: An easy-to-use Amazon S3 client object
-our $VERSION = 'v0.01.0.57'; # VERSION
+our $VERSION = 'v0.01.0.58'; # VERSION
 
 use strict;
 use warnings;
@@ -10,8 +10,9 @@ use warnings;
 # NOTE: exists and delete have HIGH risk.
 use Module::AnyEvent::Helper::Filter -as => __PACKAGE__, -target => 'Net::Amazon::S3::Client::Object',
         -transformer => 'Net::Amazon::S3',
-        -translate_func => [qw(exists get get_filename put put_filename delete)],
-        -replace_func => [qw(_send_request_raw _send_request)]
+        -translate_func => [qw(exists get get_filename put put_filename delete
+                               initiate_multipart_upload complete_multipart_upload put_part)],
+        -replace_func => [qw(_send_request_raw _send_request _send_request_xpc)]
 ;
 
 1;
@@ -26,7 +27,7 @@ AnyEvent::Net::Amazon::S3::Client::Object - An easy-to-use Amazon S3 client obje
 
 =head1 VERSION
 
-version v0.01.0.57
+version v0.01.0.58
 
 =head1 SYNOPSIS
 
@@ -125,26 +126,17 @@ You can get actual return value by calling C<shift-E<gt>recv()>.
 
 =item put_filename_async
 
-=back
+=item complete_multipart_upload_async
 
-=begin comment
+=item initiate_multipart_upload_async
 
-This section is not outputted to actual POD document but for Pod::Coverage.
-Description for The followings are omitted.
-
-=over 4
-
-=item query_string_authentication_uri
-
-Described in L<Net::Amazon::S3::Client::Bucket>.
-
-=item uri
-
-Described in L<Net::Amazon::S3::Client::Bucket>.
+=item put_part_async
 
 =back
 
-=end comment
+=for Pod::Coverage list_parts
+query_string_authentication_uri
+uri
 
 =head1 AUTHOR
 

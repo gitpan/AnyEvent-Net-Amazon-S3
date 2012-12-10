@@ -12,7 +12,7 @@ use Term::ProgressBar::Simple;
 
 # PODNAME: s3cl
 # ABSTRACT: Command line for Amazon s3 cloud storage
-our $VERSION = 'v0.01.0.57'; # VERSION
+our $VERSION = 'v0.01.0.58'; # VERSION
 
 
 my $s3;
@@ -310,7 +310,7 @@ s3cl - Command line for Amazon s3 cloud storage
 
 =head1 VERSION
 
-version v0.01.0.57
+version v0.01.0.58
 
 =head1 SYNOPSIS
 
