@@ -5,7 +5,7 @@ META.json
 META.yml
 Makefile.PL
 README
-bin/s3cl
+bin/s3cl_ae
 cpanfile
 dist.ini
 examples/backup_cpan.pl

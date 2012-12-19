@@ -26,7 +26,7 @@ my %WriteMakefileArgs = (
   },
   "DISTNAME" => "AnyEvent-Net-Amazon-S3",
   "EXE_FILES" => [
-    "bin/s3cl"
+    "bin/s3cl_ae"
   ],
   "LICENSE" => "perl",
   "NAME" => "AnyEvent::Net::Amazon::S3",
@@ -53,7 +53,7 @@ my %WriteMakefileArgs = (
     "strict" => 0,
     "warnings" => 0
   },
-  "VERSION" => "v0.01.0.58",
+  "VERSION" => "v0.02.0.58",
   "test" => {
     "TESTS" => "t/*.t"
   }

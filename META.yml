@@ -46,4 +46,4 @@ requires:
 resources:
   bugtracker: https://github.com/yak1ex/net-amazon-s3/issues
   repository: https://github.com/yak1ex/net-amazon-s3.git
-version: v0.01.0.58
+version: v0.02.0.58

@@ -1,7 +1,7 @@
 package AnyEvent::Net::Amazon::S3::Client;
 
 # ABSTRACT: An easy-to-use Amazon S3 client with AnyEvent
-our $VERSION = 'v0.01.0.58'; # VERSION
+our $VERSION = 'v0.02.0.58'; # VERSION
 
 use strict;
 use warnings;
@@ -24,7 +24,7 @@ AnyEvent::Net::Amazon::S3::Client - An easy-to-use Amazon S3 client with AnyEven
 
 =head1 VERSION
 
-version v0.01.0.58
+version v0.02.0.58
 
 =head1 SYNOPSIS
 

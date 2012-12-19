@@ -10,9 +10,9 @@ use AnyEvent::Net::Amazon::S3;
 use MIME::Types qw(by_suffix);
 use Term::ProgressBar::Simple;
 
-# PODNAME: s3cl
+# PODNAME: s3cl_ae
 # ABSTRACT: Command line for Amazon s3 cloud storage
-our $VERSION = 'v0.01.0.58'; # VERSION
+our $VERSION = 'v0.02.0.58'; # VERSION
 
 
 my $s3;
@@ -306,11 +306,11 @@ sub helper {
 
 =head1 NAME
 
-s3cl - Command line for Amazon s3 cloud storage
+s3cl_ae - Command line for Amazon s3 cloud storage
 
 =head1 VERSION
 
-version v0.01.0.58
+version v0.02.0.58
 
 =head1 SYNOPSIS
 

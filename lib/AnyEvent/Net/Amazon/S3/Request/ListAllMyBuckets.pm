@@ -1,7 +1,7 @@
 package AnyEvent::Net::Amazon::S3::Request::ListAllMyBuckets;
 
 # ABSTRACT: An internal class to list all buckets
-our $VERSION = 'v0.01.0.58'; # VERSION
+our $VERSION = 'v0.02.0.58'; # VERSION
 
 use strict;
 use warnings;
@@ -22,7 +22,7 @@ AnyEvent::Net::Amazon::S3::Request::ListAllMyBuckets - An internal class to list
 
 =head1 VERSION
 
-version v0.01.0.58
+version v0.02.0.58
 
 =head1 SYNOPSIS
 
