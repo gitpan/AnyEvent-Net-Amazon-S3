@@ -1,7 +1,7 @@
 package AnyEvent::Net::Amazon::S3::Client::Object;
 
 # ABSTRACT: An easy-to-use Amazon S3 client object
-our $VERSION = 'v0.02.0.58'; # VERSION
+our $VERSION = 'v0.03.0.60'; # VERSION
 
 use strict;
 use warnings;
@@ -9,8 +9,8 @@ use warnings;
 # TODO: _content_sub might become more async manner?
 # NOTE: exists and delete have HIGH risk.
 use Module::AnyEvent::Helper::Filter -as => __PACKAGE__, -target => 'Net::Amazon::S3::Client::Object',
-        -transformer => 'Net::Amazon::S3',
-        -translate_func => [qw(exists get get_filename put put_filename delete
+        -transformer => 'Net::Amazon::S3::Client::Object',
+        -translate_func => [qw(exists _get get get_decoded get_filename _put put put_filename delete
                                initiate_multipart_upload complete_multipart_upload put_part)],
         -replace_func => [qw(_send_request_raw _send_request _send_request_xpc)]
 ;
@@ -21,13 +21,15 @@ __END__
 
 =pod
 
+=encoding UTF-8
+
 =head1 NAME
 
 AnyEvent::Net::Amazon::S3::Client::Object - An easy-to-use Amazon S3 client object
 
 =head1 VERSION
 
-version v0.02.0.58
+version v0.03.0.60
 
 =head1 SYNOPSIS
 
@@ -119,6 +121,8 @@ You can get actual return value by calling C<shift-E<gt>recv()>.
 =item exists_async
 
 =item get_async
+
+=item get_decoded_async
 
 =item get_filename_async
 

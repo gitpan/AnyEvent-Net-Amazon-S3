@@ -1,7 +1,7 @@
 package AnyEvent::Net::Amazon::S3;
 
 # ABSTRACT: Use the Amazon S3 - Simple Storage Service
-our $VERSION = 'v0.02.0.58'; # VERSION
+our $VERSION = 'v0.03.0.60'; # VERSION
 
 use strict;
 use warnings;
@@ -58,13 +58,15 @@ __END__
 
 =pod
 
+=encoding UTF-8
+
 =head1 NAME
 
 AnyEvent::Net::Amazon::S3 - Use the Amazon S3 - Simple Storage Service
 
 =head1 VERSION
 
-version v0.02.0.58
+version v0.03.0.60
 
 =head1 SYNOPSIS
 

@@ -4,7 +4,7 @@
       "Yasutaka ATARASHI <yakex@cpan.org>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.300028, CPAN::Meta::Converter version 2.120921",
+   "generated_by" : "Dist::Zilla version 5.015, CPAN::Meta::Converter version 2.132510",
    "license" : [
       "perl_5"
    ],
@@ -22,7 +22,10 @@
       "develop" : {
          "requires" : {
             "Pod::Coverage::TrustPod" : "0",
+            "Test::CPAN::Changes" : "0.19",
             "Test::CPAN::Meta" : "0",
+            "Test::More" : "0",
+            "Test::NoTabs" : "0",
             "Test::Pod" : "1.41",
             "Test::Pod::Coverage" : "1.08"
          }
@@ -32,51 +35,36 @@
             "AnyEvent" : "0",
             "AnyEvent::HTTP::LWP::UserAgent" : "0.10",
             "AnyEvent::HTTP::LWP::UserAgent::Determined" : "0",
-            "Carp" : "0",
             "Data::Stream::Bulk::AnyEvent" : "0",
-            "Digest::MD5" : "0",
-            "File::Find::Rule" : "0",
-            "Getopt::Long" : "0",
-            "MIME::Types" : "0",
             "Module::AnyEvent::Helper" : "0",
-            "Module::AnyEvent::Helper::Filter" : "0",
-            "Module::AnyEvent::Helper::PPI::Transform" : "0",
-            "Net::Amazon::S3" : "0.58",
-            "PPI::Transform::PackageName" : "0",
-            "Path::Class" : "0",
-            "Pod::Usage" : "0",
-            "Term::Encoding" : "0",
-            "Term::ProgressBar::Simple" : "0",
+            "Net::Amazon::S3" : "0.60",
+            "filtered" : "0",
             "parent" : "0",
-            "perl" : "5.006",
-            "strict" : "0",
-            "warnings" : "0"
+            "perl" : "5.006"
          }
       },
       "test" : {
          "requires" : {
             "Digest::MD5::File" : "0",
-            "File::Find" : "0",
+            "File::Spec" : "0",
             "File::Temp" : "0",
-            "File::stat" : "0",
+            "IO::Handle" : "0",
+            "IPC::Open3" : "0",
             "LWP::Simple" : "0",
             "Test::Exception" : "0",
-            "Test::More" : "0",
-            "vars" : "0"
+            "Test::More" : "0"
          }
       }
    },
    "release_status" : "stable",
    "resources" : {
-      "bugtracker" : {
-         "web" : "https://github.com/yak1ex/net-amazon-s3/issues"
-      },
+      "homepage" : "https://github.com/yak1ex/AnyEvent-Net-Amazon-S3",
       "repository" : {
          "type" : "git",
-         "url" : "https://github.com/yak1ex/net-amazon-s3.git",
-         "web" : "https://github.com/yak1ex/net-amazon-s3"
+         "url" : "https://github.com/yak1ex/AnyEvent-Net-Amazon-S3.git",
+         "web" : "https://github.com/yak1ex/AnyEvent-Net-Amazon-S3"
       }
    },
-   "version" : "v0.02.0.58"
+   "version" : "v0.03.0.60"
 }
 
